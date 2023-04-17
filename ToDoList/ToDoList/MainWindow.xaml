@@ -3,10 +3,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:ToDoList"
+        xmlns:local="clr-namespace:ToDoList" xmlns:views="clr-namespace:ToDoList.Views"
         mc:Ignorable="d"
-        Title="My to do list" Height="800" Width="1200">
+        Title="My to do list" Height="800" Width="1200" ResizeMode="CanMinimize" Background="Gray">
     <Grid>
-
+        <views:MainView/>
     </Grid>
 </Window>
