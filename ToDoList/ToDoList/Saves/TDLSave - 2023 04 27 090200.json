@@ -1,0 +1,41 @@
+[
+    {
+        "Name": "TDL1",
+        "IconPath": null,
+        "Children": [
+            {
+                "Name": "TDL copil1",
+                "IconPath": null,
+                "Children": [],
+                "Tasks": [
+                    {
+                        "Name": "Task copil 1",
+                        "Description": "descr",
+                        "Status": 0,
+                        "Priority": 0,
+                        "Deadline": "0001-01-01T00:00:00",
+                        "DoneDate": "0001-01-01T00:00:00",
+                        "IsDone": false
+                    }
+                ]
+            }
+        ],
+        "Tasks": [
+            {
+                "Name": "Task ul meu tdl1",
+                "Description": "descriere",
+                "Status": 0,
+                "Priority": 0,
+                "Deadline": "0001-01-01T00:00:00",
+                "DoneDate": "0001-01-01T00:00:00",
+                "IsDone": false
+            }
+        ]
+    },
+    {
+        "Name": "TDL2",
+        "IconPath": null,
+        "Children": [],
+        "Tasks": []
+    }
+]
