@@ -1,0 +1,45 @@
+[
+    {
+        "Name": "FilteringTests",
+        "IconPath": null,
+        "Children": [],
+        "Tasks": [
+            {
+                "Name": "overdueTask",
+                "Description": "d",
+                "Status": 2,
+                "Priority": 0,
+                "Deadline": "2023-04-25T00:00:00",
+                "DoneDate": "2023-04-27T00:00:00+03:00",
+                "IsDone": true
+            },
+            {
+                "Name": "completedTask",
+                "Description": "d",
+                "Status": 2,
+                "Priority": 2,
+                "Deadline": "2023-04-28T00:00:00",
+                "DoneDate": "2023-04-27T00:00:00+03:00",
+                "IsDone": true
+            },
+            {
+                "Name": "pastdueTask",
+                "Description": "d",
+                "Status": 0,
+                "Priority": 0,
+                "Deadline": "2023-03-30T00:00:00",
+                "DoneDate": "0001-01-01T00:00:00",
+                "IsDone": false
+            },
+            {
+                "Name": "upcomingTask",
+                "Description": "d",
+                "Status": 0,
+                "Priority": 0,
+                "Deadline": "2023-04-30T00:00:00",
+                "DoneDate": "0001-01-01T00:00:00",
+                "IsDone": false
+            }
+        ]
+    }
+]

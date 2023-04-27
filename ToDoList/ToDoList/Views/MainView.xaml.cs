@@ -1,28 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using ToDoList.Models;
+using ToDoList.ViewModels;
 
 namespace ToDoList.Views
 {
     /// <summary>
     /// Interaction logic for MainView.xaml
     /// </summary>
-    public partial class MainView : UserControl
+    public partial class HomeView : UserControl
     {
-        public MainView()
+        private readonly ContextViewModel contextViewModel;
+        private readonly HomeViewModel homeViewModel;
+
+        public HomeView()
         {
+            contextViewModel = new ContextViewModel();
             InitializeComponent();
+            homeViewModel = new HomeViewModel(contextViewModel);
+            DataContext = homeViewModel;
         }
+
+        private void TreeView_SelectedItemChanged(object sender, RoutedPropertyChangedEventArgs<object> e)
+        {
+            contextViewModel.SelectedToDoList = e.NewValue as TDL;
+            homeViewModel.SelectedTdlTasks = contextViewModel.SelectedToDoList?.Tasks;
+        }
+
     }
 }
